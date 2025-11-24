@@ -1,0 +1,361 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Botões */
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.primary-button {
+    background-color: #007bff;
+    color: #fff;
+    border: 2px solid #007bff;
+}
+
+.primary-button:hover {
+    background-color: #0056b3;
+    color: #fff;
+    text-decoration: none;
+}
+
+.secondary-button {
+    background-color: #6c757d;
+    color: #fff;
+    border: 2px solid #6c757d;
+}
+
+.secondary-button:hover {
+    background-color: #5a6268;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Header */
+.main-header {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header .logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.main-nav .nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.main-nav .nav-list li {
+    margin-left: 25px;
+}
+
+.main-nav .nav-list a {
+    color: #555;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.main-nav .nav-list a:hover {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none; /* Escondido por padrão em desktop */
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: #333;
+}
+
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1500x800/007bff/ffffff?text=Fundo+Landing+Page') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.hero-section p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Features Section */
+.features-section {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.features-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.feature-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+}
+
+.feature-item h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #e9ecef;
+}
+
+.testimonials-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+.testimonial-item {
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    font-style: italic;
+}
+
+.testimonial-item p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.testimonial-item span {
+    font-weight: bold;
+    color: #333;
+}
+
+/* CTA Section */
+.cta-section {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.cta-section h2 {
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-section .button {
+    background-color: #fff;
+    color: #007bff;
+    border: 2px solid #fff;
+}
+
+.cta-section .button:hover {
+    background-color: #e2e6ea;
+    color: #0056b3;
+}
+
+
+/* Footer */
+.main-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.main-footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main-footer p {
+    margin: 0;
+}
+
+.main-footer .social-links a {
+    color: #fff;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+.main-footer .social-links a:hover {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .main-header .container {
+        flex-wrap: wrap;
+        justify-content: center; /* Centraliza logo e menu em telas menores */
+    }
+
+    .main-header .logo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .main-nav .nav-list {
+        display: none; /* Esconde o menu por padrão */
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 75px; /* Ajuste se o header tiver altura diferente */
+        left: 0;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    .main-nav .nav-list.active {
+        display: flex; /* Mostra o menu quando ativo */
+    }
+
+    .main-nav .nav-list li {
+        margin: 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    .main-nav .nav-list li:last-child {
+        border-bottom: none;
+    }
+
+    .main-nav .nav-list a {
+        display: block;
+        padding: 15px 20px;
+        text-align: center;
+        color: #333;
+    }
+
+    .main-nav .nav-list a:hover {
+        background-color: #f8f9fa;
+    }
+
+    .menu-toggle {
+        display: block; /* Mostra o botão de menu em telas menores */
+        order: 1; /* Garante que o toggle fique visível no canto */
+        position: absolute;
+        right: 5%;
+        top: 20px;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-section p {
+        font-size: 1.1em;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr; /* Uma coluna em mobile */
+    }
+
+    .main-footer .container {
+        flex-direction: column;
+    }
+
+    .main-footer .social-links {
+        margin-top: 15px;
+    }
+}
