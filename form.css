@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 25px;
+}
+
+.campo-grupo {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block; /* Faz a label ficar em uma linha separada */
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: calc(100% - 20px); /* Ajusta a largura para levar em conta o padding */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Garante que padding e border não aumentem a largura total */
+    font-size: 1em;
+}
+
+/* Estilo para quando o campo está inválido */
+input.invalido {
+    border-color: #dc3545; /* Borda vermelha */
+    background-color: #f8d7da; /* Fundo levemente avermelhado */
+}
+
+/* Estilo para quando o campo está válido */
+input.valido {
+    border-color: #28a745; /* Borda verde */
+    background-color: #d4edda; /* Fundo levemente esverdeado */
+}
+
+.mensagem-erro {
+    color: #dc3545; /* Texto da mensagem de erro vermelho */
+    font-size: 0.85em;
+    margin-top: 5px;
+    display: block; /* Garante que a mensagem apareça em uma nova linha */
+    min-height: 1.2em; /* Reserva um espaço para a mensagem, mesmo que vazia, para evitar "pulinhos" no layout */
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Animação suave ao passar o mouse */
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.status-formulario {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Classes para mensagens de status */
+.status-formulario.sucesso {
+    color: #28a745;
+}
+.status-formulario.erro {
+    color: #dc3545;
+}

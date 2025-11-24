@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Simples com Validação</title>
+    <!-- Link para o nosso arquivo CSS -->
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Cadastro Rápido</h2>
+        <form id="meuFormulario">
+            <div class="campo-grupo">
+                <label for="nome">Nome Completo:</label>
+                <!-- O input para o nome -->
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                <!-- Onde a mensagem de erro do nome vai aparecer -->
+                <span class="mensagem-erro" id="nomeErro"></span>
+            </div>
+
+            <div class="campo-grupo">
+                <label for="email">E-mail:</label>
+                <!-- O input para o e-mail -->
+                <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+                <!-- Onde a mensagem de erro do e-mail vai aparecer -->
+                <span class="mensagem-erro" id="emailErro"></span>
+            </div>
+
+            <button type="submit">Enviar Cadastro</button>
+            <!-- Mensagem geral de sucesso/erro do formulário -->
+            <p class="status-formulario" id="statusFormulario"></p>
+        </form>
+    </div>
+
+    <!-- Link para o nosso arquivo JavaScript -->
+    <script src="form.js"></script>
+</body>
+</html>
